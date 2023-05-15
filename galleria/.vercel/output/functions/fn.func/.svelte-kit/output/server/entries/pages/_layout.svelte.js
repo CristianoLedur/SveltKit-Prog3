@@ -3,7 +3,7 @@ const global = "";
 const Bars = "/_app/immutable/assets/bars.f512fddf.svg";
 const Header_svelte_svelte_type_style_lang = "";
 const css$1 = {
-  code: "header.svelte-e8ilpp.svelte-e8ilpp{height:80px;max-width:1200px;margin:0 auto;display:flex;justify-content:space-around;align-items:center;gap:348px}#logo.svelte-e8ilpp.svelte-e8ilpp{color:var(--primary-color);font-size:50px;font-weight:bold}.hamburger.svelte-e8ilpp.svelte-e8ilpp,.close-modal.svelte-e8ilpp.svelte-e8ilpp{display:none}.hamburger.svelte-e8ilpp img.svelte-e8ilpp{height:40px;width:40px}nav.svelte-e8ilpp.svelte-e8ilpp,#menu-modal.svelte-e8ilpp.svelte-e8ilpp,.modal-content.svelte-e8ilpp.svelte-e8ilpp{width:auto}.modal-content.svelte-e8ilpp.svelte-e8ilpp{display:block}ul.svelte-e8ilpp.svelte-e8ilpp{list-style:none;display:flex;justify-content:space-between;gap:60px}@media(min-width: 800px){header.svelte-e8ilpp.svelte-e8ilpp{max-width:auto;width:90%;gap:0;justify-content:space-between}#logo.svelte-e8ilpp.svelte-e8ilpp{font-size:40px}ul.svelte-e8ilpp.svelte-e8ilpp{gap:30px}}@media(max-width: 799px){header.svelte-e8ilpp.svelte-e8ilpp{height:60px;width:90%;margin:0 auto;justify-content:space-between;align-items:center;gap:0}#logo.svelte-e8ilpp.svelte-e8ilpp{font-size:30px;padding-left:15px}.hamburger.svelte-e8ilpp.svelte-e8ilpp{display:block;height:40px;width:40px;margin-right:15px;background-color:transparent;border:none}.close-modal.svelte-e8ilpp.svelte-e8ilpp{display:block;position:fixed;top:15px;right:15px;font-weight:bold;background-color:transparent;border:1px solid;color:var(--primary-color);padding:8px;margin:0}.modal-content.svelte-e8ilpp.svelte-e8ilpp{position:fixed;height:100vh;width:60%;right:0;top:0;z-index:1;background-color:#131010fa}ul.svelte-e8ilpp.svelte-e8ilpp{flex-direction:column;padding:55px 0 0 25px;gap:20px}li.svelte-e8ilpp.svelte-e8ilpp{opacity:1}}",
+  code: "header.svelte-1fmfrus.svelte-1fmfrus{height:80px;max-width:1200px;margin:0 auto;padding:10px 0;display:flex;justify-content:space-around;align-items:center;gap:348px}#logo.svelte-1fmfrus.svelte-1fmfrus{color:var(--primary-color);font-size:50px;font-weight:bold}.hamburger.svelte-1fmfrus.svelte-1fmfrus,.close-modal.svelte-1fmfrus.svelte-1fmfrus{display:none}.hamburger.svelte-1fmfrus img.svelte-1fmfrus{height:40px;width:40px}nav.svelte-1fmfrus.svelte-1fmfrus,#menu-modal.svelte-1fmfrus.svelte-1fmfrus,.modal-content.svelte-1fmfrus.svelte-1fmfrus{width:auto}.modal-content.svelte-1fmfrus.svelte-1fmfrus{display:block}ul.svelte-1fmfrus.svelte-1fmfrus{list-style:none;display:flex;justify-content:space-between;gap:45px}@media(max-width: 1164px){header.svelte-1fmfrus.svelte-1fmfrus{padding-top:15px;max-width:auto;width:90%;gap:0;justify-content:space-between}#logo.svelte-1fmfrus.svelte-1fmfrus{font-size:40px}ul.svelte-1fmfrus.svelte-1fmfrus{gap:20px}}@media(max-width: 799px){header.svelte-1fmfrus.svelte-1fmfrus{height:60px;width:90%;margin:0 auto;justify-content:space-between;align-items:center;gap:0}#logo.svelte-1fmfrus.svelte-1fmfrus{font-size:30px;padding-left:15px}.hamburger.svelte-1fmfrus.svelte-1fmfrus{display:block;height:40px;width:40px;margin-right:15px;background-color:transparent;border:none}.close-modal.svelte-1fmfrus.svelte-1fmfrus{display:block;position:fixed;top:15px;right:15px;font-weight:bold;background-color:transparent;border:1px solid;color:var(--primary-color);padding:8px;margin:0}.modal-content.svelte-1fmfrus.svelte-1fmfrus{position:fixed;height:100vh;width:60%;right:0;top:0;z-index:1;background-color:#131010fa}ul.svelte-1fmfrus.svelte-1fmfrus{flex-direction:column;padding:55px 0 0 25px;gap:20px}li.svelte-1fmfrus.svelte-1fmfrus{opacity:1}}",
   map: null
 };
 const Header = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -18,13 +18,14 @@ const Header = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   );
   $$result.css.add(css$1);
   return `
-<header class="svelte-e8ilpp"><a id="logo" href="/" class="svelte-e8ilpp">Galleria</a>
-    <nav data-sveltekit-reload class="svelte-e8ilpp"><div id="menu-modal" class="modal svelte-e8ilpp"><button class="hamburger svelte-e8ilpp"><img${add_attribute("src", Bars, 0)} alt="Hamburger" class="svelte-e8ilpp"></button>
-            ${open ? `<div class="modal-content svelte-e8ilpp"><button class="close-modal svelte-e8ilpp">X</button>
-                    <ul class="svelte-e8ilpp"><li class="svelte-e8ilpp"><a href="/">Home</a></li>
-                        <li class="svelte-e8ilpp"><a href="/fotos">Fotos</a></li>
-                        <li class="svelte-e8ilpp"><a href="/contato">Contato</a></li>
-                        <li class="svelte-e8ilpp"><a href="/sobre">Sobre</a></li></ul></div>` : ``}</div></nav>
+<header class="svelte-1fmfrus"><a id="logo" href="/" class="svelte-1fmfrus">Galleria</a>
+    <nav data-sveltekit-reload class="svelte-1fmfrus"><div id="menu-modal" class="modal svelte-1fmfrus"><button class="hamburger svelte-1fmfrus"><img${add_attribute("src", Bars, 0)} alt="Hamburger" class="svelte-1fmfrus"></button>
+            ${open ? `<div class="modal-content svelte-1fmfrus"><button class="close-modal svelte-1fmfrus">X</button>
+                    <ul class="svelte-1fmfrus"><li class="svelte-1fmfrus"><a href="/">Home</a></li>
+                        <li class="svelte-1fmfrus"><a href="/fotos">Fotos</a></li>
+                        <li class="svelte-1fmfrus"><a href="/contato">Contato</a></li>
+                        <li class="svelte-1fmfrus"><a href="/sobre">Sobre</a></li>
+                        <li class="svelte-1fmfrus"><a href="/exemplos">Exemplos</a></li></ul></div>` : ``}</div></nav>
 </header>`;
 });
 const Footer_svelte_svelte_type_style_lang = "";
