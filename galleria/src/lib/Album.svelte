@@ -1,11 +1,11 @@
 <script>
-    // export let img;
+    export let img;
     export let object;
     export let onClick;
 </script>
 
 <div>
-    <img src="{object.url}" alt="{object.title}">
+    <img src="{img.url}" alt="{object.title}">
     <h2>{`Album ${object.albumId}`}</h2>
     <button on:click={() => onClick(object)}>Mais fotos</button>
 </div>
