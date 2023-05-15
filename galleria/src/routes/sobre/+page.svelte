@@ -100,9 +100,17 @@
 
     .logos {
         height: 100px;
+        margin: 0 auto;
     }
 
-    @media (max-width: 500px) {
+    @media (max-width: 800px) {
+        
+        .box__about {
+            min-height: auto;
+            height: auto;
+            width: 90%;
+            margin: 0 auto;
+        }
         .title {
             float: left;
             font-size: 24px;
@@ -157,5 +165,13 @@
 			padding-left: 55px;
 		}
 	}
+    @media (max-width: 400px) {
+        .box__about {
+            min-height: auto;
+            height: auto;
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
 </style>
 

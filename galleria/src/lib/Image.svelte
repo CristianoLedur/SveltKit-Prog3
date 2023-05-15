@@ -10,12 +10,11 @@
 <style>
     div {
         position: relative;
-        width: 350px;
-        height: 400px;
+        width: auto;
+        height: auto;
         padding: 20px;
         background-color: var(--yellow);
-        border-bottom-left-radius: 30px;
-        border-bottom-right-radius: 30px;
+        border-radius: 10px;
     }
 
     img {
@@ -30,12 +29,17 @@
         padding: 10px;
         font-weight: 400;
     }
-    
+
+    @media (max-width: 799px) {
+        div {
+            width: calc(70vw);
+            margin: 0 auto;
+        }   
+    }
+
     @media (max-width: 500px) {
         div {
-            width: 90%;
-            height: 340px;
-            margin: 0 auto;
+            width: 100%;
         }
     }
 </style>

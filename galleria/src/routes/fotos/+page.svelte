@@ -62,7 +62,7 @@
         letter-spacing: 2px;
     }
 
-    @media (min-width: 800px) {
+    @media (max-width: 1100px) {
         .galery__photos {
             grid-template-columns: repeat(2, auto);
             gap: 40px;

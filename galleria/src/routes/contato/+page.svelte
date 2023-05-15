@@ -157,11 +157,14 @@
         border-radius: 30px;
     }
 
-    @media (max-width: 500px) {
+    @media (max-width: 1100px) {
         .contact {
             flex-direction: column;
             gap: 40px;
         }
+    }
+
+    @media (max-width: 500px) {
 
         /* form */
 
@@ -225,8 +228,12 @@
 
         .contact__map iframe {
             width: 100%;
-            height: 300px;
+            height: 400px;
             margin-bottom: 20px;
+        }
+
+        iframe {
+            width: 100%;
         }
     }
 </style>

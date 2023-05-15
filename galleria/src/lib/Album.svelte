@@ -13,13 +13,14 @@
 <style>
     div {
         position: relative;
-        height: 350px;
+        height: 400px;
+        width: auto;
     }
 
     img {
-        position: absolute;
-        height: 100%;
         width: 100%;
+        height: 100%;
+        border-radius: 10px;
     }
 
     h2 {
@@ -50,6 +51,22 @@
         text-align: center;
         font-weight: bold;
         padding: 15px 10px; 
+    }
+
+    @media (max-width: 1100px) {
+        div {
+            height: 400px;
+            width: 100%;
+            margin: 0 auto;
+        }   
+    }
+
+    @media (max-width: 799px) {
+        div {
+            height: calc(70vw);
+            width: calc(70vw);
+            margin: 0 auto;
+        }   
     }
     
     @media (max-width: 500px) {

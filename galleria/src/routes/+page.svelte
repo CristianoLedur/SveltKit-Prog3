@@ -194,6 +194,23 @@
         letter-spacing: 2px;
     }
 
+    @media (max-width: 1100px) {
+        .galery__components {
+            grid-template-columns: repeat(2, auto);
+            gap: 40px;
+        }
+
+        .galery__components__see-more {
+            width: 300px;
+        }
+    }
+
+    @media (max-width: 799px) {
+        .galery__components {
+            grid-template-columns: repeat(1, auto);
+        }
+    }
+
     @media (max-width: 500px) {
         .galery__components {
             grid-template-columns: repeat(1, auto);

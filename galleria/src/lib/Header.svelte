@@ -4,7 +4,7 @@
     let innerWidth;
     let open;
     setTimeout(() => {
-        if(innerWidth > 375) {
+        if(innerWidth > 799) {
             open = true;
         } else {
             open = false;
@@ -41,6 +41,9 @@
                         <li>
                             <a href="/sobre">Sobre</a>
                         </li>
+                        <li>
+                            <a href="/exemplos">Exemplos</a>
+                        </li>
                     </ul>
                 </div>
             {/if}
@@ -53,6 +56,7 @@
         height: 80px;
         max-width: 1200px;
         margin: 0 auto;
+        padding: 10px 0;
 
         display: flex;
         justify-content: space-around;
@@ -87,11 +91,12 @@
         list-style: none;
         display: flex;
         justify-content: space-between;
-        gap: 60px;
+        gap: 45px;
     }
 
-    @media (min-width: 800px) {
+    @media (max-width: 1164px) {
         header {
+            padding-top: 15px;
             max-width: auto;
             width: 90%;
             gap:0;
@@ -103,7 +108,7 @@
         }
 
         ul {
-            gap: 30px;
+            gap: 20px;
         }
     }
 
