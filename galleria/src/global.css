@@ -1,0 +1,75 @@
+:root {
+    --primary-color: #1EB854;
+    --secondary-color: #1FD65F;
+    --text-color: #D6CBCB;
+    --bg-color: #171212;
+    --black: #110E0E;
+    --yellow: #D99330;
+}
+
+* {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 300;
+}
+
+body, html {
+    height: 100%;
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: var(--bg-color);
+}
+
+main {
+    min-height: calc(100% - 160px);
+    height: auto;
+    width: 100%;
+    max-width: 1200px;
+    margin: 30px auto 0;
+}
+
+#btnTopo {
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    border: none;
+    margin: 0;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+/* header */
+a, a:visited {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 25px;
+    font-weight: 400;
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+@media (max-width: 375px) {
+    a, a:visited {
+        font-size: 16px;
+        color: var(--primary-color);
+    }
+
+    main {
+        width: 90%;
+        margin: 10px auto 0;
+    }
+
+    #btnTopo {
+        bottom: 10px;
+        right: 20px;
+    }
+    
+}
