@@ -52,7 +52,7 @@
         padding: 15px 10px; 
     }
     
-    @media (max-width: 375px) {
+    @media (max-width: 500px) {
         div {
             height: 300px;
             width: 300px;

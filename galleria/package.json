@@ -15,5 +15,8 @@
 		"svelte-lazyload": "^0.0.4",
 		"vite": "^4.3.0"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"svelte-scrollto": "^0.2.0"
+	}
 }

@@ -31,7 +31,7 @@
         font-weight: 400;
     }
     
-    @media (max-width: 375px) {
+    @media (max-width: 500px) {
         div {
             width: 90%;
             height: 340px;

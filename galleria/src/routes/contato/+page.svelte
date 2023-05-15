@@ -157,7 +157,7 @@
         border-radius: 30px;
     }
 
-    @media (max-width: 375px) {
+    @media (max-width: 500px) {
         .contact {
             flex-direction: column;
             gap: 40px;

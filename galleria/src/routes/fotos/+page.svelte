@@ -4,14 +4,18 @@
     import { onMount } from 'svelte';
 
     let photos = [];
-    let numItens = 9;
+    let innerWidth;
+    let numItens;
 
-    // let mobile = window.innerWidth;
-    // if(mobile <= 375) {
-    //     numItens = 4;
-    // } else {
-    //     numItens = 9;
-    // }
+    setTimeout(() => {
+        if(innerWidth <= 375) {
+            numItens = 4;
+        } else if (innerWidth <= 1024) {
+            numItens = 4;
+        } else {
+            numItens = 9;
+        }
+    }, 100);
 
     function handleClick() {
         numItens += 6;
@@ -23,7 +27,7 @@
 
     
 </script>
-
+<svelte:window bind:innerWidth />
 <div class="galery__photos">
     {#each photos.slice(0, numItens) as photo}
         <Imagem image={photo}/>
@@ -58,7 +62,24 @@
         letter-spacing: 2px;
     }
 
-    @media (max-width: 375px) {
+    @media (min-width: 800px) {
+        .galery__photos {
+            grid-template-columns: repeat(2, auto);
+            gap: 40px;
+        }
+
+        .galery__photos__see-more {
+            width: 300px;
+        }
+    }
+
+    @media (max-width: 799px) {
+        .galery__photos {
+            grid-template-columns: repeat(1, auto);
+        }
+    }
+
+    @media (max-width: 500px) {
         .galery__photos {
             grid-template-columns: repeat(1, auto);
             gap: 40px;

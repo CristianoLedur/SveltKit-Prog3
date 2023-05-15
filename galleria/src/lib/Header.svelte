@@ -1,16 +1,23 @@
 <script>
     import Bars from './assets/bars.svg';
 
-    // let screenWidth = window.innerWidth;
-    // let open = screenWidth > 375 ? true : false;
-
-    let open = true;
-
-    const modal = async () => {
+    let innerWidth;
+    let open;
+    setTimeout(() => {
+        if(innerWidth > 375) {
+            open = true;
+        } else {
+            open = false;
+        }
+    }, 100);
+    
+    function modal() {
         open = !open;
-    }
-</script>
+    };
 
+    
+</script>
+<svelte:window bind:innerWidth />
 <header>
     <a id="logo" href="/">Galleria</a>
     <nav data-sveltekit-reload>
@@ -34,9 +41,6 @@
                         <li>
                             <a href="/sobre">Sobre</a>
                         </li>
-                        <li>
-                            <a href="/testeHome">Teste</a>
-                        </li>
                     </ul>
                 </div>
             {/if}
@@ -45,19 +49,6 @@
 </header>
 
 <style>
-    /* :global(a:hover::backdrop, a:visited:hover::before) {
-        animation: grow 0.3s ease-in-out;
-    }
-
-    @keyframes grow {
-        0% {
-            transform: scaleX(0);
-        }
-        100% {
-            transform: scaleX(1);
-        }
-    } */
-
     header {
         height: 80px;
         max-width: 1200px;
@@ -79,6 +70,11 @@
         display: none;
     }
 
+    .hamburger img{
+        height: 40px;
+        width: 40px;
+    }
+
     nav, #menu-modal, .modal-content {
         width: auto;
     }
@@ -94,7 +90,24 @@
         gap: 60px;
     }
 
-    @media (max-width: 375px) {
+    @media (min-width: 800px) {
+        header {
+            max-width: auto;
+            width: 90%;
+            gap:0;
+            justify-content: space-between;
+        }
+
+        #logo {
+            font-size: 40px;
+        }
+
+        ul {
+            gap: 30px;
+        }
+    }
+
+    @media (max-width: 799px) {
 
 		header {
             height: 60px;
@@ -107,12 +120,14 @@
 
         #logo {
             font-size: 30px;
+            padding-left: 15px;
         }
 
         .hamburger {
             display: block;
             height: 40px;
             width: 40px;
+            margin-right: 15px;
             background-color: transparent;
             border: none;
         }

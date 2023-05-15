@@ -22,7 +22,7 @@
         color: var(--primary-color)
     }
 
-    @media (max-width: 375px) {
+    @media (max-width: 500px) {
         footer {
             height: 30px;
             margin: 15px auto 0;

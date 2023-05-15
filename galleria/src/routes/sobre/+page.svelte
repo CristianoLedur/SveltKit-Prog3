@@ -102,7 +102,7 @@
         height: 100px;
     }
 
-    @media (max-width: 375px) {
+    @media (max-width: 500px) {
         .title {
             float: left;
             font-size: 24px;

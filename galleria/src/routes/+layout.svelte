@@ -1,21 +1,22 @@
 <script>
     import '../global.css';
-    import Header from '$lib/Header.svelte';
-    import Footer from '$lib/Footer.svelte';
+    import Header from '../lib/Header.svelte';
+    import Footer from '../lib/Footer.svelte';
+	import ScrollTop from '../lib/assets/imgArrow-up.svg';
+	import * as animateScroll from 'svelte-scrollto';
 
-
-    // function backToTop() {
-	// 	window.scrollTo({
-	// 		top: 0,
-	// 		behavior: 'auto'
-  	// 	});
-	// };
+	
+    function backToTop() {
+		animateScroll.scrollToTop();
+	};
 
 
 </script>
 <Header />
 <main>
 	<slot/>
+	<button id="btnTopo" on:click={backToTop}>
+		<img src={ScrollTop} alt="Arrow top" />
+	</button>
 </main>
-<!-- Botão para ir ao topo -->
 <Footer />
