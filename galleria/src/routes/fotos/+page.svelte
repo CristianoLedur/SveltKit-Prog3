@@ -8,10 +8,10 @@
     let numItens;
 
     setTimeout(() => {
-        if(innerWidth <= 375) {
+        if(innerWidth < 800) {
             numItens = 4;
-        } else if (innerWidth <= 1024) {
-            numItens = 4;
+        } else if (innerWidth >= 800) {
+            numItens = 6;
         } else {
             numItens = 9;
         }

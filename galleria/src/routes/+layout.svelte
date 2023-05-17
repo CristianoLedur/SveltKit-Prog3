@@ -5,13 +5,11 @@
 	import ScrollTop from '../lib/assets/imgArrow-up.svg';
 	import * as animateScroll from 'svelte-scrollto';
 
-	
     function backToTop() {
 		animateScroll.scrollToTop();
 	};
-
-
 </script>
+
 <Header />
 <main>
 	<slot/>

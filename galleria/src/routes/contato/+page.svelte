@@ -12,11 +12,9 @@
     const telRegex = /^\d{10}$/;
     let message = "";
 
-    let status = false;
-
     function handleSubmit() {
         alert("teste");
-    }
+    };
 </script>
 
 <div class="contact">

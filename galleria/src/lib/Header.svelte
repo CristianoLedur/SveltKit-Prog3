@@ -3,6 +3,7 @@
 
     let innerWidth;
     let open;
+    
     setTimeout(() => {
         if(innerWidth > 799) {
             open = true;
@@ -14,18 +15,18 @@
     function modal() {
         open = !open;
     };
-
-    
 </script>
-<svelte:window bind:innerWidth />
+
+<svelte:window bind:innerWidth /> <!-- pegar a largura da tela -->
+
 <header>
     <a id="logo" href="/">Galleria</a>
-    <nav data-sveltekit-reload>
+    <nav> <!-- removi o valor "data-sveltekit-reload" de dentro da tag, o que faz com que a aplicação não recarege a pigina durante a navegação -->
         <div id="menu-modal" class="modal">
             <button class="hamburger" on:click={modal}>
                 <img src={Bars} alt="Hamburger">
             </button>
-            {#if open}
+            {#if innerWidth > 799 || open}
                 <div class="modal-content">
                     <button class="close-modal" on:click={modal}>X</button>
                     <ul>

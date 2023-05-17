@@ -7,4 +7,4 @@ export function load() {
 			alt: img.alt
 		}))
 	};
-}
+};

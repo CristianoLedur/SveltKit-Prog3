@@ -12,7 +12,7 @@
         } else {
             count +=1;
         }
-    }
+    };
 
     function decrement() {
         if(count == 0 ) {
@@ -20,7 +20,7 @@
         } else {
             count -=1;
         }
-    }
+    };
 
 </script>
 
@@ -90,7 +90,6 @@
     .apresentacao__topicos li {
         height: 40px;
     }
-
 
     .apresentacao__referencia, .apresentacao__topicos {
         width: 50%;
