@@ -16,7 +16,6 @@
     let innerWidth;
 
     setTimeout(() => {
-        console.log(innerWidth);
         if(innerWidth < 800) {
             numItens = 4;
         } else if (innerWidth >= 800) {
@@ -138,14 +137,3 @@
         }
     }
 </style>
-            
-            
-
-
-
-
-
-
-
-
-
