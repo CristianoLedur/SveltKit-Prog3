@@ -25,7 +25,7 @@ No projeto, foram explorados os recursos do SvelteKit para criar uma estrutura d
 
 ## 🚀 Assessando o projeto
 
-Para acessar o projeto, basta [clicar aqui]()<br>
+Para acessar o projeto, basta [clicar aqui](https://svelt-2geztddv9-cristianoledur.vercel.app/)<br>
 <br>
 
 ## 📝 Licença
