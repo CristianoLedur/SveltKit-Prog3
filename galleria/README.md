@@ -1,38 +1,35 @@
-# create-svelte
+# Galleria em SvelteKit
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+<img src="screenshot.PNG" alt="imagem do projeto" style="width: 700px" />
 
-## Creating a project
+> A aplicação é desenvolvida com SvelteKit, aproveitando os conceitos de roteamento, componentes, gerenciamento de estado e manipulação de dados por meio de APIs para oferecer uma experiência dinâmica e responsiva.
 
-If you're seeing this, you've probably already done this step. Congrats!
+No projeto, foram explorados os recursos do SvelteKit para criar uma estrutura de roteamento eficiente, permitindo a navegação entre páginas de forma suave. Componentes reutilizáveis foram utilizados para facilitar a organização e modularização do código. O gerenciamento de estado foi implementado para controlar as interações do usuário e fornecer uma experiência interativa. Além disso, a manipulação de dados por meio de APIs externas foi incorporada para obter e atualizar informações de forma dinâmica.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+* Este projeto foi desenvolvido como parte do trabalho de Programação III do curso de ADS, com o objetivo de aplicar e aprofundar os conceitos aprendidos durante o curso.
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+## Conceitos abordados
 
-## Developing
+- SvelteKit
+    - Client-side rendering (CSR).
+    - Server-side rendering (SSR).
+    - Roteamento
+    - Gerenciamento de estado
+    - Componentes
+    - onMount
+    - Carregamento de dados
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+- API
+    - Get
+    - Post
 
-```bash
-npm run dev
+## 🚀 Assessando o projeto
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+Para acessar o projeto, basta [clicar aqui]()<br>
+<br>
 
-## Building
+## 📝 Licença
 
-To create a production version of your app:
+Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
 
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+[⬆ Voltar ao topo](#Galleria-em-SvelteKit)<br>
