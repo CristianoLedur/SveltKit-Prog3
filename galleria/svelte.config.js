@@ -1,20 +1,12 @@
 import vercel from '@sveltejs/adapter-vercel';
-import { resolve } from 'path';
+import { vitePreprocess } from '@sveltejs/kit/vite';
  
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
   kit: {
     // adapter: adapter(),
 	adapter: vercel(),
-	vite: {
-		resolve: {
-			alias: {
-				$src: resolve('./src'),
-				$components: resolve('./src/components'),
-				$sections: resolve('./src/sections')
-			}
-		}
-	}
+	preprocess: vitePreprocess()
   },
 };
  
